@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif
+}
+/*-------------------------------------------HEADER---------------------------------------*/
+body{
+    height: 100vh;
+    
+    
+}
+.edit1{
+    padding: 15px;
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('../IMAGENS/header.jpg');
+    
+}
+.edit1 nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.edit1 nav p{
+    color: white;
+    font-size: 1.8em;
+    font-weight: 900;
+    padding: 0px 15px;
+    background:rgba(0, 0, 139, 0.97);
+    border-radius: 10px 0px 10px 0px;
+    
+
+
+}
+.edit1 nav  ul{
+    list-style: none;
+    display: flex;
+    
+}
+.edit1 nav  ul li{
+    margin: 0 15px;
+    
+
+}
+.edit1 nav  ul li a{
+    text-decoration: none;
+    color:black;
+    transition: 0.6s;
+    font-weight: 900;
+
+}
+.edit1 nav ul li a:hover{
+    border: 1px solid black;
+    border-radius: 60px;
+    padding: 15px;
+    background:darkblue;
+    color: white;
+
+}
+.text{
+
+    padding: 15px;
+    margin: 15% auto;
+    width: 500px;
+    border-radius: 25px 0px 25px 0px;
+    text-align: center;
+    width: 100%;
+
+}
+h1{
+    font-size: 8em;
+    font-weight: 900;
+}
+.text p{
+    padding: 10px 0px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 15px 0px 15px 0px;
+    background: rgba(0, 0, 0, 0.568);
+    
+    
+}
+/*------------------------------------------------------SECTION 1*/
+.input{
+    background-color: darkblue;
+    padding: 15px;
+    height: 150px;
+}
+.procurar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    max-width: 100%;
+    
+    
+}
+form{
+    position: relative;
+}
+.procurar form input{
+    height: 50px;
+    width: 800px;
+    padding: 0px 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.procurar form button{
+    border: 2px solid black;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0px 15px;
+    background: chocolate;
+    border-radius: 0px 10px 10px 0px;
+}
+/*-------------------------------------------------SECTION 2*/
+.cards{
+    background: darkorange;
+
+}
+.movimentar{
+
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+
+}
+.cards .card{
+    width: 300px;
+    height: 410px;
+    border-radius: 20px 0px;
+    list-style: none;
+    background-color: white;
+    position: relative;
+    transition: 0.5s;
+    box-shadow: 5px 5px 35px black;
+
+}
+img{
+    width: 300px;
+    border-radius: 20px 0px 0px 0px;
+}
+.cards .card h3{
+    text-align: center;
+    padding: 5px;
+}
+.cards .card ul{
+    list-style: none;
+}
+.cards .card li{
+    padding: 5px 5px;
+}
+.cards .card .edit{
+    position: absolute;
+    background: darkblue;
+    padding: 5px;
+    color:white;
+    border-radius: 10px 0px 10px 0px;
+    right: 0;
+}
+.cards .card .edit-um{
+    position: absolute;
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+    top: 150px;
+    border-radius: 0px 10px 10px 0px;
+}
+.card p, li{
+    text-align: center;
+    padding: 2px;
+}
+.card:hover{
+    transform: scale(1.25);
+}
+.star{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+    color: orange;
+}
+.button1{
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding: 2px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+
+}
+/*------------------------------------------FOOTER*/
+footer{
+    background: darkblue;
+    color: white;
+    height: 100px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    color:darkorange;
+    padding: 10px;
+
+}
+/*------------------------------------------------------RESPONSIVIDADE*/
+@media(max-width: 480px){
+    body{
+        height: calc(100vh - 50px);
+    }
+    .text{
+        font-size: 8px;
+    }
+    header nav ul{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        height: 50px;
+        color: white;
+        margin: 0;
+        background-color: chocolate;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav p{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .movimentar{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .card{
+        margin: 10px 0px;
+    }
+
+}
